@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lobster+Two&display=swap");
+:root {
+  --main-color: #008000; /* green */
+  --black-color: #000000; /* black */
+  --white-color: #ffffff; /* white */
+  --purple-color: #d8bfd8; /* purple */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: opacity 0.5s, background-color 0.5s ease;
+}
+
+a {
+  text-decoration: none;
+}
+
+#wrapper {
+  max-width: 700px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0 10px;
+}
+
+#quote-box {
+  background: var(--purple-color);
+  max-width: 600px;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+#text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 450px;
+  width: 100%;
+  max-height: 200px;
+  gap: 15px;
+  font-size: 25px;
+  padding: 5px;
+  text-align: left;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  line-height: 1.1;
+  margin-bottom: 5px;
+  overflow-y: auto;
+  font-family: "Lobster Two", sans-serif;
+}
+
+.svg-quote {
+  min-width: 50px; /* Add a minimum width */
+}
+
+#quote-author {
+  max-width: 500px;
+  width: 100%;
+  height: 200px;
+  padding: 25px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-start; /* Center the quote vertically */
+}
+
+#author {
+  font-style: italic;
+  padding: 5px;
+  text-align: right;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  font-family: "Archivo Black", sans-serif;
+}
+
+#box-link-button {
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+#links {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+#tweet-quote,
+#tumblr-quote {
+  background: var(--black-color);
+  padding: 10px;
+  width: 40px; /* Increase the width */
+  height: 40px; /* Add a height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s, background-color 0.5s ease;
+  border-radius: 3px;
+}
+
+#tweet-quote:hover,
+#tumblr-quote:hover {
+  opacity: 0.8;
+}
+
+#new-quote {
+  padding: 6px 15px;
+  cursor: pointer;
+  background: var(--main-color);
+  border: none;
+  border-radius: 3px;
+  color: var(--white-color);
+  margin-bottom: 20px;
+  transition: opacity 0.5s, background-color 0.5s ease;
+}
+
+#new-quote:hover {
+  opacity: 0.8;
+}
