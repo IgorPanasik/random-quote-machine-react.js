@@ -12,6 +12,11 @@ html {
   text-size-adjust: none;
 }
 
+html,
+body {
+  overflow: hidden;
+}
+
 /* Remove default margin in favour of better control in authored CSS */
 body,
 h1,

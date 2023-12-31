@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lobster+Two&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Quicksand:wght@300&display=swap");
 :root {
   --main-color: #008000; /* green */
   --black-color: #000000; /* black */
@@ -60,7 +60,7 @@ a {
   line-height: 1.1;
   margin-bottom: 5px;
   overflow-y: auto;
-  font-family: "Lobster Two", sans-serif;
+  font-family: "Assistant", sans-serif;
 }
 
 .svg-quote {
@@ -85,7 +85,7 @@ a {
   margin: 0;
   opacity: 0;
   transition: opacity 0.5s ease;
-  font-family: "Archivo Black", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 #box-link-button {
